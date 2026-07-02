@@ -1,11 +1,25 @@
-# Modify The Goal Manager So Users Can Add And Change Icons
+commbank-program/tasks/2_frontend
+/modify_goal_manager.md
+matt-ramotar
+matt-ramotar
+Goal manager
+372df18
+ · 
+4 years ago
+commbank-program/tasks/2_frontend
+/modify_goal_manager.md
 
-- [ ] Add an `Add icon` component that:
-  - [ ] Is only visible when there is no icon
-  - [ ] Uses `TransparentButton` component
-  - [ ] Opens the emoji picker component
+Preview
 
-```ts
+Code
+
+Blame
+85 lines (66 loc) · 1.91 KB
+Modify The Goal Manager So Users Can Add And Change Icons
+ Add an Add icon component that:
+ Is only visible when there is no icon
+ Uses TransparentButton component
+ Opens the emoji picker component
 // GoalManager.tsx
 
 export function GoalManager(props: Props) {
@@ -35,15 +49,11 @@ export function GoalManager(props: Props) {
     {/* ... */}
   )
 }
-```
-
-- [ ] Add an `Icon` component that:
-  - [ ] Is only visible when there is an icon
-  - [ ] Uses `TransparentButton` component
-  - [ ] Displays the icon with `font-size: 5.5rem;`
-  - [ ] Opens the emoji picker component
-
-```ts
+ Add an Icon component that:
+ Is only visible when there is an icon
+ Uses TransparentButton component
+ Displays the icon with font-size: 5.5rem;
+ Opens the emoji picker component
 // GoalIcon.tsx
 
 const Icon = styled.h1`
@@ -82,4 +92,3 @@ export function GoalManager(props: Props) {
     {/* ... */}
   )
 }
-```
